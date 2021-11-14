@@ -1,0 +1,12 @@
+<p>Start editing to see some magic happen :)</p>
+
+<button (click)="currentProgress = currentProgress + 1">CLICK PERCENT</button>
+<!-- <button (click)="">CLICK COLOR</button> -->
+<app-progress-bar></app-progress-bar>
+<br /><br />
+<p>{{ currentProgress }}</p>
+<app-progress-bar
+  [progress]="currentProgress"
+  [progressColor]="'dodgerblue'"
+  [backgroundColor]="'coral'"
+></app-progress-bar>
